@@ -1,15 +1,30 @@
 .list{
     list-style: none;
     padding: 10px 0;
+    
     &.list__step{
+        @media screen and (min-width: 1034px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+        @media screen and (min-width: 1035px){
+            justify-content: space-arround;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
         li{
 
             font-size: 14px;
             padding: 25px 0;
-            width: 320px;
+            width: 100%;
             margin: 12px auto;
             background-color: rgb(246, 246, 246);
             border-radius: 20px;
+            @media screen and (max-width: 1035px){
+                width: 100%;
+            }
             @include box-shadow;
             i{
                 margin: 0 25px 0 33px;
@@ -40,6 +55,11 @@
     }
 
     &.list__restaurant{
+        @media screen and (min-width: 1035px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
         li{
             border-radius: 13px;
             background-color: white;

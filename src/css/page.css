@@ -14,6 +14,13 @@ a {
   color: black;
 }
 
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
 .heading {
   font-family: Roboto, sans-serif;
   font-size: 20px;
@@ -41,6 +48,11 @@ body {
   box-shadow: inset 0 5px 5px -5px black;
   padding: 13px 0;
 }
+@media screen and (min-width: 1400px) {
+  #localisation {
+    border-radius: 20px 20px 0 0;
+  }
+}
 
 .loc {
   font-size: 16px;
@@ -55,6 +67,11 @@ body {
 #explore {
   padding: 30px 0 47px 0;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 1400px) {
+  #explore {
+    border-radius: 0 0 20px 20px;
+  }
 }
 #explore p {
   text-align: center;
@@ -71,6 +88,11 @@ body {
 #restaurant {
   background-color: #f6f6f6;
   padding: 40px 20px;
+}
+@media screen and (min-width: 1400px) {
+  #restaurant {
+    border-radius: 20px;
+  }
 }
 
 .btn {
@@ -111,14 +133,33 @@ body {
   list-style: none;
   padding: 10px 0;
 }
+@media screen and (min-width: 1034px) {
+  .list.list__step {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1035px) {
+  .list.list__step {
+    justify-content: space-arround;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 .list.list__step li {
   font-size: 14px;
   padding: 25px 0;
-  width: 320px;
+  width: 100%;
   margin: 12px auto;
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 5px 10px #949494;
+}
+@media screen and (max-width: 1035px) {
+  .list.list__step li {
+    width: 100%;
+  }
 }
 .list.list__step li i {
   margin: 0 25px 0 33px;
@@ -142,6 +183,13 @@ body {
 }
 .list.list__step li:nth-child(3)::before {
   content: "3";
+}
+@media screen and (min-width: 1035px) {
+  .list.list__restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 }
 .list.list__restaurant li {
   border-radius: 13px;
