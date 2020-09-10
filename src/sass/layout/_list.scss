@@ -1,0 +1,78 @@
+.list{
+    list-style: none;
+    padding: 10px 0;
+    &.list__step{
+        li{
+
+            font-size: 14px;
+            padding: 25px 0;
+            width: 320px;
+            margin: 12px auto;
+            background-color: rgb(246, 246, 246);
+            border-radius: 20px;
+            @include box-shadow;
+            i{
+                margin: 0 25px 0 33px;
+            }
+
+            &::before{
+                background-color: $color-primary;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                line-height: 24px;
+                text-align: center;
+                display: inline-block;
+                margin-left: -12px;
+                color: white;
+            }
+            &:nth-child(1)::before{
+                content: '1';
+            }
+            &:nth-child(2)::before{
+                content: '2';
+            }
+            &:nth-child(3)::before{
+                content: '3';
+            }
+        }
+        
+    }
+
+    &.list__restaurant{
+        li{
+            border-radius: 13px;
+            background-color: white;
+            margin-bottom: 20px;
+            @include box-shadow;
+            & img{
+                height: 175px;
+                width: 100%;
+                object-fit: cover;
+                background-color: red;
+                border-radius: 13px 13px 0 0;
+            }
+            &>div{
+                margin-left: 12px;
+                padding: 10px 0;
+                display: flex;
+                & .list.list__restaurant__info{
+                    flex: 1;
+                    h2{
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 100;
+                    }
+                    
+                }
+                & button{
+                    width: 40px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

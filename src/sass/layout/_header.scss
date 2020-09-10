@@ -1,0 +1,17 @@
+.heading{
+    font-family: $font-default;
+    font-size: 20px;
+    margin: 10px 0;
+    &.heading--center{
+        text-align: center;
+    }
+    &.heading__title{
+        font-family: $font-header;
+        font-size: 26px;
+        margin: 20px 0 16px 0;
+        &--lowsize{
+            font-size: 15px;
+            color: #fff;
+        }
+    }
+}
