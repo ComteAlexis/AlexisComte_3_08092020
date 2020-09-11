@@ -5,6 +5,10 @@
     &.heading--center{
         text-align: center;
     }
+    &.heading__menu{
+        font-size: 24px;
+        font-family: $font-header;
+    }
     &.heading__title{
         font-family: $font-header;
         font-size: 26px;

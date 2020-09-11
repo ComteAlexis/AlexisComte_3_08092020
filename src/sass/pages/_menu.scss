@@ -1,0 +1,37 @@
+header i{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+}
+
+
+#image-fond{
+    img{
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+#menu{
+    border-radius: 20px 20px 0 0;
+    margin-top: -20px;
+    background-color: rgb(246, 246, 246);
+    position: relative;
+    padding-bottom: 60px;
+    a:last-child button{
+        margin-top: 50px;
+    }
+    > div:nth-child(1){
+        display: flex;
+        h2{
+            flex: 1;
+            line-height: 55px;
+            margin-left: 12px;
+        }
+        button{
+            width: 40px;
+            margin-right: 30px;
+        }
+    }
+}

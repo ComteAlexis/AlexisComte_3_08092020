@@ -22,6 +22,10 @@ a {
 .heading.heading--center {
   text-align: center;
 }
+.heading.heading__menu {
+  font-size: 24px;
+  font-family: Shrikhand, sans-serif;
+}
 .heading.heading__title {
   font-family: Shrikhand, sans-serif;
   font-size: 26px;
@@ -107,25 +111,86 @@ a {
   background-color: red;
   border-radius: 13px 13px 0 0;
 }
-.list.list__restaurant li > div {
+.list.list__restaurant li a > div {
   margin-left: 12px;
   padding: 10px 0;
   display: flex;
 }
-.list.list__restaurant li > div .list.list__restaurant__info {
+.list.list__restaurant li a > div .list.list__restaurant__info {
   flex: 1;
 }
-.list.list__restaurant li > div .list.list__restaurant__info h2 {
+.list.list__restaurant li a > div .list.list__restaurant__info h2 {
   font-size: 14px;
   font-weight: bold;
 }
-.list.list__restaurant li > div .list.list__restaurant__info p {
+.list.list__restaurant li a > div .list.list__restaurant__info p {
   font-size: 14px;
   font-weight: 100;
 }
-.list.list__restaurant li > div button {
+.list.list__restaurant li a > div button {
   width: 40px;
   margin-right: 20px;
+}
+.list__menu--heading {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.list__menu--heading span {
+  padding-bottom: 3px;
+  border-bottom: solid 2px #99E2D0;
+}
+.list.list__menu {
+  padding: 0 12px;
+}
+.list.list__menu li {
+  height: 70px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 12px 0;
+  display: flex;
+}
+.list.list__menu li .list__menu__info {
+  flex: 1;
+  padding: 10px;
+}
+.list.list__menu li .list__menu__info div {
+  margin-top: 10px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.list.list__menu li .list__menu__info div .ingredients {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  flex: 1;
+}
+.list.list__menu li .list__menu__info div .prix {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: right;
+}
+.list.list__menu li .list__menu__info:hover + .list__menu__check {
+  width: 80px;
+}
+.list.list__menu li .list__menu__check {
+  background-color: #99E2D0;
+  font-size: 30px;
+  width: 0px;
+  overflow: hidden;
+  line-height: 70px;
+  text-align: center;
+  transition: width 0.4s;
+  border-radius: 0 12px 12px 0;
+  color: white;
+  cursor: pointer;
+}
+.list.list__menu li .list__menu__check:hover {
+  width: 80px;
 }
 
 footer {
@@ -236,6 +301,41 @@ body {
   #restaurant {
     border-radius: 20px;
   }
+}
+
+header i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+}
+
+#image-fond img {
+  width: 100%;
+  z-index: 1;
+}
+
+#menu {
+  border-radius: 20px 20px 0 0;
+  margin-top: -20px;
+  background-color: #f6f6f6;
+  position: relative;
+  padding-bottom: 60px;
+}
+#menu a:last-child button {
+  margin-top: 50px;
+}
+#menu > div:nth-child(1) {
+  display: flex;
+}
+#menu > div:nth-child(1) h2 {
+  flex: 1;
+  line-height: 55px;
+  margin-left: 12px;
+}
+#menu > div:nth-child(1) button {
+  width: 40px;
+  margin-right: 30px;
 }
 
 /*# sourceMappingURL=page.css.map */
