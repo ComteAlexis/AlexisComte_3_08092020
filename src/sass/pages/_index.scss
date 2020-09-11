@@ -1,6 +1,9 @@
 body{
     font-family: $font-default;
-    @extend %centerAt1400px;
+    @media screen and (min-width: 1400px){
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
 
 #localisation{

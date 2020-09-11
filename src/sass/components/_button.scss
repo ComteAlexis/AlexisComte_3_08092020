@@ -2,6 +2,7 @@
     font-size: 14px;
     border: transparent;
     margin: 10px 0;
+    cursor: pointer;
 
     &.btn--gradient{
         background: linear-gradient(-5deg,$color-primary, $color-secondary);
@@ -18,7 +19,6 @@
         background-color: transparent;
         svg{
             height: 30px;
-            cursor: pointer;
             #PlainHearth{
                 fill: transparent;
                 transition: fill .4s;
