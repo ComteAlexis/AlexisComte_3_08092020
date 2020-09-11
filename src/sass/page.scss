@@ -1,9 +1,19 @@
-@import './base/typography', './base/base';
-@import './utils/mixins';
-@import './utils/placeholder';
-@import './utils/variables';
-@import './layout/_header';
-@import './pages/index';
-@import './components/button';
-@import './layout/list';
-@import './layout/footer';
+@import
+  './utils/variables',
+  './utils/mixins',
+  './utils/placeholder';
+
+@import
+  './base/base',
+  './base/typography';
+
+@import
+  './layout/header',
+  './layout/list',
+  './layout/footer';
+
+@import
+  './components/button';
+
+@import
+  './pages/index';
