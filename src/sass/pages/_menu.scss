@@ -10,6 +10,8 @@ header i{
     img{
         width: 100%;
         z-index: 1;
+        max-height: 400px;
+        object-fit: cover;
     }
 }
 

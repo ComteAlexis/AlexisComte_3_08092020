@@ -64,7 +64,10 @@
             border-radius: 13px;
             background-color: white;
             margin-bottom: 20px;
-            @include box-shadow;
+            @include box-shadow($shadow-color);
+            &:hover{
+                @include box-shadow(darken($shadow-color, 10))
+            }
             & img{
                 height: 175px;
                 width: 100%;
@@ -111,11 +114,25 @@
     &.list__menu{
         padding: 0 12px;
         li{
-            height: 70px;
             background-color: white;
             border-radius: 12px;
             margin: 12px 0;
             display: flex;
+            opacity: 0;
+            &:nth-child(1){
+                animation: slideUp .7s;
+                animation-fill-mode: forwards;
+            }
+            &:nth-child(2){
+                animation: slideUp .7s;
+                animation-delay: 120ms;
+                animation-fill-mode: forwards;
+            }
+            &:nth-child(3){
+                animation: slideUp .7s;
+                animation-delay: 230ms;
+                animation-fill-mode: forwards;
+            }
             .list__menu__info{
                 flex: 1;
                 padding: 10px;
@@ -158,4 +175,20 @@
             }
         }
     }
+}
+
+@keyframes slideUp{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
 }

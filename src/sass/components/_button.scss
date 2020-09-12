@@ -13,7 +13,11 @@
         margin: 0 auto;
         color: white;
         margin-top: 23px;
-        @include box-shadow;
+        @include box-shadow($shadow-color);
+        &:hover{
+            @include box-shadow(darken($shadow-color, 10));
+            background: linear-gradient(-5deg,lighten($color-primary, 5), lighten($color-secondary, 5));
+        }
     }
     &.btn--like{
         background-color: transparent;
