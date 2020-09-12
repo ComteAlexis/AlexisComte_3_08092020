@@ -281,10 +281,10 @@ footer a i {
 
 @keyframes rotateLoader {
   0% {
-    rotate: 0deg;
+    rotate: 0;
   }
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 @keyframes showContent {
