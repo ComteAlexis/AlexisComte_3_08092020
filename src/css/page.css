@@ -169,6 +169,11 @@ a {
   animation-delay: 230ms;
   animation-fill-mode: forwards;
 }
+.list.list__menu li:nth-child(4) {
+  animation: slideUp 0.7s;
+  animation-delay: 320ms;
+  animation-fill-mode: forwards;
+}
 .list.list__menu li .list__menu__info {
   flex: 1;
   padding: 10px;

@@ -133,6 +133,11 @@
                 animation-delay: 230ms;
                 animation-fill-mode: forwards;
             }
+            &:nth-child(4){
+                animation: slideUp .7s;
+                animation-delay: 320ms;
+                animation-fill-mode: forwards;
+            }
             .list__menu__info{
                 flex: 1;
                 padding: 10px;
