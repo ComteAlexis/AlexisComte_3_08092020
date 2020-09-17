@@ -3,8 +3,9 @@
     border: transparent;
     margin: 10px 0;
     cursor: pointer;
+    text-align: center;
 
-    &.btn--gradient{
+    &.btn--gradient {
         background: linear-gradient(-5deg,$color-primary, $color-secondary);
         border-radius: 30px;
         padding: 18px 0px;
@@ -21,19 +22,19 @@
     }
     &.btn--like{
         background-color: transparent;
-        svg{
-            height: 30px;
-            #PlainHearth{
-                fill: transparent;
-                transition: fill .4s;
-                &:hover{
-                    fill: red;
-
-                }
-            }
-            #EmptyHearth{
+        height: 30px;
+        width: 30px;
+        margin-right: 30px;
+        .PlainHearth{
+            fill: transparent;
+            transition: fill .4s;
+            &:hover{
                 fill: red;
+
             }
+        }
+        .EmptyHearth{
+            fill: red;
         }
     }
 }
